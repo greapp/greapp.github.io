@@ -42,6 +42,19 @@
 
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
+        <script>
+        function suc(){
+
+        alert("success");
+
+        }
+
+
+        function fail(){
+        alert("extension installation failed!");
+        }
+
+        </script>
 
     </head>
 
@@ -116,7 +129,7 @@
 					<div class="item active" style="background-image: url(img/1.png);">
 						<div  class="carousel-caption" style="top:5%">
               <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> GRE</span> on <span>FB</span>!</h2>
-							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/oclkafgppoefkcihbimpmpcbndgkjkdc','','');" class="color">/download</span> Chrome Extension.</h3>
+							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/oclkafgppoefkcihbimpmpcbndgkjkdc',suc,fail);" class="color">/download</span> Chrome Extension.</h3>
 							<p data-wow-duration="1000ms" class="wow slideInRight animated">GRE Chrome Extension for your Facebook.</p>
 
 
@@ -132,9 +145,9 @@
 						<div  class="carousel-caption" style="top:5%">
 
               <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> GRE</span> on <span>NewTab</span>!</h2>
-							<h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/oclkafgppoefkcihbimpmpcbndgkjkdc','','');" class="color">/download</span> Chrome Extension.</h3>
+							<h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/oclkafgppoefkcihbimpmpcbndgkjkdc',suc,fail);" class="color">/download</span> Chrome Extension.</h3>
 							<p data-wow-duration="500ms" class="wow slideInRight animated">GRE Chrome Extension for your NewTab.</p>
-          
+
 
 						</div>
 					</div>
