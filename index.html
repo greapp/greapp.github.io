@@ -549,7 +549,7 @@
 							<form action="#" id="contact-form">
 								<div class="input-group name-email">
 									<div class="input-field">
-										<input type="text" name="name" id="name" placeholder="Name" class="form-control">
+										<input type="text" name="fullname" id="name" placeholder="Name" class="form-control">
 									</div>
 									<div class="input-field">
 										<input type="email" name="email" id="email" placeholder="Email" class="form-control">
@@ -699,7 +699,7 @@
 
 				$('#contact-form').validate({
 					rules: {
-						name: {
+						fullname: {
 							required: true,
 							minlength: 2
 						},
@@ -712,7 +712,7 @@
 						}
 					},
 					messages: {
-						name: {
+						fullname: {
 							required: "come on, you have a name don't you?",
 							minlength: "your name must consist of at least 2 characters"
 						},
@@ -728,7 +728,7 @@
 						$(form).ajaxSubmit({
 							type:"POST",
 							data: $(form).serialize(),
-							url:"process.php",
+							url:"http://demos.developerowl.com/ContactFormUsingTelegramBotAPI/contactForm.php",
 							success: function() {
 								$('#contact-form :input').attr('disabled', 'disabled');
 								$('#contact-form').fadeTo( "slow", 0.15, function() {
